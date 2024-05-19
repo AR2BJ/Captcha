@@ -1,0 +1,19 @@
+@font-face {
+	font-family: "Barlow";
+	src: url("../font/eot/Barlow-Regular.eot");
+	src: local("Barlow"),
+		url("../font/eot/Barlow-Regular.eot?#iefix") format("embedded-opentype"),
+		url("../font/woff2/Barlow-Regular.woff2") format("woff2"),
+		url("../font/woff/Barlow-Regular.woff") format("woff"),
+		url("../font/ttf/Barlow-Regular.ttf") format("truetype");
+}
+
+body {
+	background-image: url("../img/triangles-1430105_1920.png");
+}
+h4 {
+	text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.518);
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
