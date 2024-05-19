@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta tags -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Page title -->
+		<title>Captcha</title>
+		<!-- Favicon -->
+		<link
+			rel="shortcut icon"
+			href="./img/google_recaptcha-icon.svg"
+			type="image/x-icon" />
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="./css/main.css" />
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css" />
+		<!-- SweetAlert2 -->
+		<link
+			rel="stylesheet"
+			href="./vendor/sweetalert2/dist/sweetalert2.min.css" />
+	</head>
+	<body>
+		<!-- Captcha container -->
+		<div class="wrapper w-full flex flex-row justify-center items-center">
+			<div
+				class="captcha w-[490px] h-[490px] p-14 mt-52 rounded-xl relative flex flex-col justify-center items-center gap-14 before:content-[''] before:rounded-xl before:absolute before:backdrop-blur-md before:shadow-[2px_2px_15px_rgba(0,0,0,0.412)] before:inset-0 before:m-auto before:z-10">
+				<!-- Captcha heading -->
+				<h4 class="text-3xl mb-4 text-white font-semibold font-[Barlow] z-20">
+					CAPTCHA
+				</h4>
+				<!-- Captcha code display -->
+				<div class="head w-full flex flex-row justify-center items-center z-20">
+					<div
+						class="captcha_code w-5/6 h-16 rounded-full bg-white flex flex-row justify-center items-center">
+						<!-- Captcha code spans -->
+						<span
+							class="text-2xl font-[arial] font-black tracking-[10px] pb-2 select-none"></span>
+						<span
+							class="text-2xl font-[arial] font-black tracking-[10px] pt-2 select-none"></span>
+						<span
+							class="text-2xl font-[arial] font-black tracking-[10px] pb-2 select-none"></span>
+						<span
+							class="text-2xl font-[arial] font-black tracking-[10px] pt-2 select-none"></span>
+						<span
+							class="text-2xl font-[arial] font-black tracking-[10px] pb-2 select-none"></span>
+						<!-- Captcha line -->
+						<div class="line w-36 h-0.5 bg-slate-950 absolute hidden"></div>
+					</div>
+					<!-- Reload button -->
+					<button
+						class="cursor-pointer text-white font-bold absolute right-24 w-12 h-12 text-center flex flex-col justify-center items-center bg-gradient-to-r from-violet-500 from-10% via-sky-500 via-30% to-pink-500 to-90% bg-[length:400%] rounded-[30px] z-10 hover:rotate-180 duration-500 hover:animate-gradient-xy hover:bg-[length:100%] before:content-[''] before:absolute before:-top-[5px] before:-bottom-[5px] before:-left-[5px] before:-right-[5px] before:bg-gradient-to-r before:from-violet-500 before:from-10% before:via-sky-500 before:via-30% before:to-pink-500 before:bg-[length:400%] before:-z-10 before:rounded-[35px] before:hover:blur-xl before:transition-all before:ease-in-out before:duration-[1s] before:hover:bg-[length:10%] active:bg-violet-700 focus:ring-violet-700"
+						type="button">
+						<i class="fa-regular fa-rotate text-[22px] select-none"></i>
+					</button>
+				</div>
+				<!-- Captcha input field and submit button -->
+				<div class="foot w-full flex flex-col justify-center items-center z-20">
+					<input
+						class="field w-3/4 p-3 rounded-full text-center text-[15px] border focus:outline-none focus:shadow-lg transition-all"
+						type="text" />
+					<button
+						class="cursor-pointer text-white mt-7 font-bold relative w-36 h-9 text-center bg-gradient-to-r from-violet-500 from-10% via-sky-500 via-30% to-pink-500 to-90% bg-[length:400%] rounded-[30px] z-10 hover:animate-gradient-xy hover:bg-[length:100%] before:content-[''] before:absolute before:-top-[5px] before:-bottom-[5px] before:-left-[5px] before:-right-[5px] before:bg-gradient-to-r before:from-violet-500 before:from-10% before:via-sky-500 before:via-30% before:to-pink-500 before:bg-[length:400%] before:-z-10 before:rounded-[35px] before:hover:blur-xl before:transition-all before:ease-in-out before:duration-[1s] before:hover:bg-[length:10%] active:bg-violet-700 focus:ring-violet-700"
+						type="button">
+						<span class="text-[16px] font-[arial] select-none">Submit</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- SweetAlert2 -->
+		<script src="./vendor/sweetalert2/dist/sweetalert2.min.js"></script>
+		<!-- Font Awesome -->
+		<script src="./vendor/fontawesome/js/all.min.js"></script>
+		<!-- Custom JavaScript -->
+		<script src="./js/main.js"></script>
+	</body>
+</html>
